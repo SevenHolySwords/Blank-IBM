@@ -7,7 +7,7 @@ function increaseCount() {
 }
 
 function displayCount(){
-    document. getElementById('countDisplay').innerHTML=count; //display the count
+    document.getElementById('countDisplay').innerHTML=count; //display the count
 }
 
 function checkCountValue() {

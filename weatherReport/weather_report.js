@@ -5,7 +5,7 @@ function showweatherDetails(event){
     const apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
 
-    fetch (apiURL)
+    fetch(apiUrl)
         .then(response => response.json())
         .then(data=>{
             const weatherInfo = document.getElementById('weatherInfo');
@@ -18,3 +18,9 @@ function showweatherDetails(event){
 
 
 document.getElementById('weatherForm').addEventListener('submit',showweatherDetails );
+
+//.catch(error => {
+//   console.error('Error fetching weather:', error);
+//  const weatherInfo = document.getElementById('weatherInfo');
+//  weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
+ // });
